@@ -23,8 +23,9 @@ fn main() {
         .args([
             "-NonInteractive",
             "-NoProfile",
+            "-NoLogo",
             "-Command",
-            "$a = Get-Alias | Select-Object Name, Source; @($a) | ConvertTo-Json -Compress",
+            "Import-Module Microsoft.PowerShell.Management -ErrorAction SilentlyContinue; $a = Get-Alias | Select-Object Name, Source; @($a) | ConvertTo-Json -Compress",
         ])
         .output()
         .unwrap_or_else(|err| {
