@@ -1,6 +1,6 @@
 [package]
 name = "pwshac"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
 description = "Prints PowerShell Remove-Alias commands while preserving selected aliases"
 readme = "README.md"

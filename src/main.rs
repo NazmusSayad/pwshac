@@ -22,6 +22,7 @@ fn main() {
     let output = Command::new("pwsh")
         .args([
             "-NonInteractive",
+            "-NoProfile",
             "-Command",
             "$a = Get-Alias | Select-Object Name, Source; @($a) | ConvertTo-Json -Compress",
         ])
