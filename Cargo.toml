@@ -6,6 +6,7 @@ description = "Prints PowerShell Remove-Alias commands while preserving selected
 readme = "README.md"
 repository = "https://github.com/NazmusSayad/pwshac"
 homepage = "https://github.com/NazmusSayad/pwshac"
+license = "MIT"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
